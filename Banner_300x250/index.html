@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="ad.size" content="width=300,height=250">
+
+    <title>DKZ</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript">
+        var clickTag = "https://example.com";
+    </script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js"></script>
+</head>
+
+<body>
+    <div id="main_wrapper" onclick="javascript:window.open(window.clickTag)">
+
+        <div id="heroImg"></div>
+        <div id="copy"></div>
+        <div id="circle"></div>
+        
+        <div id="white_plane"></div>
+        <div id="frame"></div>
+
+    </div>
+
+    <script type="text/javascript" src=animation.js></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('main_wrapper').classList.add('active');
+            init();
+        };
+    </script>
+
+</body>
+
+</html>
